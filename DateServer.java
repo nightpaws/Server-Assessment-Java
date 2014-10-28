@@ -17,6 +17,7 @@ public class DateServer
 	public static void main(String[] args) {
 
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket sock = new ServerSocket(6013);
 
 			// now listen for connections
