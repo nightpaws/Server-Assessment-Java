@@ -1,20 +1,31 @@
 package com.cs313.ace2;
 
-public class ServerMessage implements Message {
+import java.io.Serializable;
+
+public class ServerMessage implements Message,Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8355523039598854001L;
+	
+	
 	// Message to be sent back to the client after they message the server
-	String userInput = "";
+	protected String userInput = null;
 	protected int charCount = 0, digitCount = 0;
+
+	public ServerMessage(String inputString) {
+		userInput = inputString;
+	}
 
 	@Override
 	public void setCounts() {
 		// set the counts for characters and digits
 		for (int i = 0; i < userInput.length(); i++) {
-			if (Character.isDigit(i)) {
+			charCount++;
+			if (Character.isDigit(userInput.charAt(i))) {
 				digitCount++;
 			}
-			charCount++;
 		}
-
 	}
 
 	@Override
