@@ -4,12 +4,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.PrintWriter;
+import java.net.ConnectException;
 import java.net.Socket;
 import java.util.Scanner;
 
 public class Client {
 	public static void main(String[] args) throws IOException {
-		String version = "0.5";
+		String version = "0.7";
 		Socket sock = null;
 		Scanner sc = new Scanner(System.in);
 		String userInput = "";
@@ -65,8 +66,20 @@ public class Client {
 						.println("Message recieved is not of the correct format.");
 			}
 
-		} catch (Exception e) {
-			System.err.println(e);
+		} catch (ConnectException e) {
+			// If Server is not running display error and retry execution
+			// System.err.println(e);
+			System.err
+					.println("Server Connection Unsuccessful. The connection to the server was refused. Is the server online? \n"
+							+ e + "\n\n");
+			main(args);
+		} catch (ClassNotFoundException e) {
+			// If Object Input Stream class is not found.
+			System.err
+					.println("Your system does not have the required Input Stream Class available to run this application "
+							+ e + "\n\n");
+			e.printStackTrace();
+			System.exit(12);
 		} finally {
 			// sock.close();
 			// sc.close();
