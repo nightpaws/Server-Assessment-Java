@@ -2,10 +2,8 @@ package com.cs313.ace2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -28,7 +26,7 @@ public class Server {
 				System.out.println("Input has been read");
 
 				// create message to return to user
-				Message clientReturn = new ServerMessage(userInput);
+				Message clientReturn = new MessageImpl(userInput);
 				clientReturn.setCounts();
 
 				// Check value to be returned on server

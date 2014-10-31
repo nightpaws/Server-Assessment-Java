@@ -2,7 +2,7 @@ package com.cs313.ace2;
 
 import java.io.Serializable;
 
-public class ServerMessage implements Message,Serializable {
+public class MessageImpl implements Message,Serializable {
 	/**
 	 * 
 	 */
@@ -13,7 +13,7 @@ public class ServerMessage implements Message,Serializable {
 	protected String userInput = null;
 	protected int charCount = 0, digitCount = 0;
 
-	public ServerMessage(String inputString) {
+	public MessageImpl(String inputString) {
 		userInput = inputString;
 	}
 
