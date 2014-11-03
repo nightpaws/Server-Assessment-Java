@@ -31,12 +31,19 @@ public class Client {
 			System.out
 					.println("\n=========\nProcessing:\nSocket Opened on client\n");
 
+			
+			
+			
 			// send the data to the server
 			PrintWriter out = new PrintWriter(sock.getOutputStream(), true);
 			out.println(userInput);
 			// out.close();
 			System.out.println("User Input data sent to the server...");
 
+		
+			
+			
+			
 			// receive the response from the server
 			System.out.println("Recieving response...");
 			InputStream in = sock.getInputStream();
@@ -49,6 +56,12 @@ public class Client {
 			while ((recieved = inStream.readObject()) == null)
 				;
 
+			
+			
+			
+			
+			
+			
 			// Receive the output from server and display to the user
 			System.out.println("Now outputting result...\n=========\n");
 
