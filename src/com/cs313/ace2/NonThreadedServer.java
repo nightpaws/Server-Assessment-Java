@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server {
+public class NonThreadedServer {
 	public static void main(String[] args) {
 
 		try {
