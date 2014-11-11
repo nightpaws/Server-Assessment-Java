@@ -9,20 +9,6 @@ import java.net.Socket;
 
 public class Server implements Runnable {
 
-	// Thread pooled server
-
-//	public static void main(String[] args) {
-//		Thread worker = new Thread(new Server());
-//		worker.start();
-//		// now wait 3 seconds before interrupting it
-//		try {
-//			Thread.sleep(3000);
-//		} catch (InterruptedException ie) {
-//		}
-//
-//		worker.interrupt();
-//	}
-
 	@Override
 	public void run() {
 		while (true) {
@@ -37,7 +23,7 @@ public class Server implements Runnable {
 
 				// await string from client and read in from buffer
 				userInput = getInput(client, userInput);
-
+				Thread.yield();
 				// create message to return to user
 				Message clientReturn = new MessageImpl(userInput);
 				clientReturn.setCounts();

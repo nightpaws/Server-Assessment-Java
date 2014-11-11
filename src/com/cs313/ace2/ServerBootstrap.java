@@ -11,7 +11,7 @@ public class ServerBootstrap {
 		new Thread(s).start();
 
 		while (true) {
-			System.out.println("Quit? y|n");
+			System.out.println("To quit, press q, then enter at any time:");
 			input = in.nextLine().charAt(0);
 			switch (input) {
 			case 'y':
