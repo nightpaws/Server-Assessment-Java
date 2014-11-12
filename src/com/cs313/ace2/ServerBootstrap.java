@@ -14,8 +14,9 @@ public class ServerBootstrap {
 			System.out.println("To quit, press q, then enter at any time:");
 			input = in.nextLine().charAt(0);
 			switch (input) {
-			case 'y':
+			case 'q':
 				in.close();
+				System.out.println("Terminating Server...");
 				System.exit(0);
 				break;
 			default:

@@ -24,19 +24,19 @@ public class Server implements Runnable {
 				// await string from client and read in from buffer
 				userInput = getInput(client, userInput);
 				Thread.yield();
+
 				// create message to return to user
 				Message clientReturn = new MessageImpl(userInput);
 				clientReturn.setCounts();
-
 				// Check value to be returned on server
 				DebugInputCheck(userInput, clientReturn);
-
+				Thread.yield();
 				// return message to user
 				output(client, clientReturn);
 
 				// Remember to close the stream
-				 client.close();
-				 sock.close();
+				client.close();
+				sock.close();
 				// System.out.println("Stream has been closed");
 				if (Thread.currentThread().isInterrupted()) {
 					System.out.println("I'm interrupted!");

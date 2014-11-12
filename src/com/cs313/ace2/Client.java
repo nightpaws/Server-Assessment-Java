@@ -79,13 +79,15 @@ public class Client {
 					.println("Your system does not have the required Input Stream Class available to run this application "
 							+ e + "\n\n");
 			e.printStackTrace();
-			System.exit(12);
+			System.exit(1);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			//A problem occurred whilst streaming data.
+			System.err.println("An error occurred whilst transferring data. Check your network connection status.");
 			e.printStackTrace();
+			System.exit(2);
 		} finally {
-			// sock.close();
-			// sc.close();
+			 sc.close();
+			 System.exit(0);
 		}
 	}
 
