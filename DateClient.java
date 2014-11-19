@@ -1,4 +1,3 @@
-package com.cs313.ace2;
 /**
  * Client program requesting current date from server.
  *

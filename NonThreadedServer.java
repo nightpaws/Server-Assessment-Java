@@ -1,5 +1,3 @@
-package com.cs313.ace2;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

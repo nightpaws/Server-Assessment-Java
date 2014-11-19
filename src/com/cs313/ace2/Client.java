@@ -1,3 +1,31 @@
+/***************************************************************************************************************
+ *
+ * Filename: Client.java
+ *
+ * Synopsis: Client Command Line Interface for ACE2
+ *
+ *  This is a client interface for interacting with a corresponding Server. This class receives user
+ * input in the form of a text string, then submits the data as a string to the server. It then waits
+ * for a Message object in response which it then returns to the user detailing the length, and number
+ * of digits within the string.
+ *
+ * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
+ * 
+ * Author:
+ *      Craig Morrison, Reg no: 201247913
+ *
+ * Lab:
+ *      Monday 9am
+ *
+ * Promise: I confirm that this submission is all my own work.
+ *
+ *            (Craig Morrison)	__________________________________________
+ *
+ * Version: Full version history can be found on GitHub.
+ *
+ **************************************************************************************************************/
+
+
 package com.cs313.ace2;
 
 import java.io.IOException;

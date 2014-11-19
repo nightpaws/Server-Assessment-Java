@@ -1,4 +1,4 @@
-package com.cs313.ace2;
+
 
 /**
 * An example program illustrating thread interruption

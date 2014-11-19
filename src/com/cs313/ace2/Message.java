@@ -1,3 +1,28 @@
+/***************************************************************************************************************
+ *
+ * Filename: Message.java
+ *
+ * Synopsis: Message Interface for ACE2
+ *
+ *  A bare ADT for defining the structure of a Message object as used by the server to communicate its
+ *  working back to the client.
+ *
+ * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
+ * 
+ * Author:
+ *      Craig Morrison, Reg no: 201247913
+ *
+ * Lab:
+ *      Monday 9am
+ *
+ * Promise: I confirm that this submission is all my own work.
+ *
+ *            (Craig Morrison)	__________________________________________
+ *
+ * Version: Full version history can be found on GitHub.
+ *
+ **************************************************************************************************************/
+
 package com.cs313.ace2;
 
 public interface Message {

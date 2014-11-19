@@ -1,3 +1,29 @@
+/***************************************************************************************************************
+ *
+ * Filename: Server.java
+ *
+ * Synopsis: Server Class for ACE2
+ *
+ *  This is a Runnable Server Interface which can be executed in a thread by another class. It receives an input
+ *  string from a client system connecting to the same port and then processes it, providing a Message object
+ *  which it then returns to the client system.
+ *
+ * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
+ * 
+ * Author:
+ *      Craig Morrison, Reg no: 201247913
+ *
+ * Lab:
+ *      Monday 9am
+ *
+ * Promise: I confirm that this submission is all my own work.
+ *
+ *            (Craig Morrison)	__________________________________________
+ *
+ * Version: Full version history can be found on GitHub.
+ *
+ **************************************************************************************************************/
+
 package com.cs313.ace2;
 
 import java.io.BufferedReader;
