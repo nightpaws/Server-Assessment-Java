@@ -82,7 +82,10 @@ public class Client {
 			ObjectInputStream inStream = new ObjectInputStream(in);
 			System.out.println("Response recieved from the server...");
 
-			// wait whilst received is null and stream input into 'received'
+			/*
+			 * spinlock whilst received is null and then stream input into
+			 * 'received' object for outputting to client
+			 */
 			Object received;
 			while ((received = inStream.readObject()) == null)
 				;
@@ -90,14 +93,18 @@ public class Client {
 			// Receive the output from server and display to the user
 			System.out.println("Now outputting result...\n=========\n");
 
-			MessageImpl imp1 = null;
+			MessageImpl outMsg = null;
 
+			/*
+			 * a check to see if the message is of the correct format, then
+			 * convert and output or respond with error
+			 */
 			if (received instanceof Message) {
-				imp1 = (MessageImpl) received;
-				System.out.println("Character count is: "
-						+ imp1.getCharacterCount());
-				System.out.println("Digit count for is: "
-						+ imp1.getDigitCount());
+				outMsg = (MessageImpl) received;
+				System.out.println("Character count of the message is: "
+						+ outMsg.getCharacterCount());
+				System.out.println("Digit count of the message is: "
+						+ outMsg.getDigitCount());
 
 			} else {
 				System.out
@@ -105,29 +112,45 @@ public class Client {
 			}
 
 		} catch (ConnectException e) {
-			// If Server is not running display error and retry execution
-			// System.err.println(e);
+			// If Server is not running display error and retry
 			System.err
 					.println("Server Connection Unsuccessful. The connection to the server was refused. Is the server online? \n"
 							+ e + "\n\n");
 			main(args);
 		} catch (ClassNotFoundException e) {
-			// If Object Input Stream class is not found.
+			/*
+			 * If Object Input Stream class is not found. Cannot continue so
+			 * inform user and exit with stack trace for diagnostics
+			 */
 			System.err
 					.println("Your system does not have the required Input Stream Class available to run this application "
 							+ e + "\n\n");
 			e.printStackTrace();
 			System.exit(1);
 		} catch (IOException e) {
-			// A problem occurred whilst streaming data.
+			/*
+			 * A problem occurred whilst streaming data. This error should not
+			 * occur under any normal circumstances so stack trace is printed
+			 * for diagnosis if it happens.
+			 */
 			System.err
 					.println("An error occurred whilst transferring data. Check your network connection status.");
 			e.printStackTrace();
 			System.exit(2);
-		} finally {
+		}
+
+		/*
+		 * After execution has completed, check if the user wishes to run
+		 * another query. Either repeat program or terminate gracefully accordingly
+		 */
+		System.out.println("Run the program again? y|n");
+		char r = sc.nextLine().charAt(0);
+		if (r == 'n') {
+			System.out.println("Terminating the client system. Goodbye!");
 			sc.close();
 			System.exit(0);
+		} else {
+			main(args);
 		}
 	}
-
 }
