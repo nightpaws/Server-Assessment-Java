@@ -1,30 +1,3 @@
-/***************************************************************************************************************
- *
- * Filename: Client.java
- *
- * Synopsis: Client Command Line Interface for ACE2
- *
- *  This is a client interface for interacting with a corresponding Server. This class receives user
- * input in the form of a text string, then submits the data as a string to the server. It then waits
- * for a Message object in response which it then returns to the user detailing the length, and number
- * of digits within the string.
- *
- * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
- * 
- * Author: Craig Morrison, Reg no: 201247913
- *
- * Lab:
- *      Monday 9am
- *
- * Promise: I confirm that this submission is all my own work.
- *
- *            (Craig Morrison)	__________________________________________
- *
- * Version: Full version history can be found on GitHub.
- *
- **************************************************************************************************************/
-
-
 package com.cs313.ace2;
 
 import java.io.IOException;
@@ -35,7 +8,39 @@ import java.net.ConnectException;
 import java.net.Socket;
 import java.util.Scanner;
 
+/***************************************************************************************************************
+ *
+ * Filename: Client.java
+ * 
+ * Synopsis: Client Command Line Interface for ACE2
+ *
+ * This is a client interface for interacting with a corresponding Server. This
+ * class receives user input in the form of a text string, then submits the data
+ * as a string to the server. It then waits for a Message object in response
+ * which it then returns to the user detailing the length, and number of digits
+ * within the string.
+ *
+ * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
+ * 
+ * Author: Craig Morrison, Reg no: 201247913
+ *
+ * Lab: Monday 9am
+ *
+ * Promise: I confirm that this submission is all my own work.
+ *
+ * (Craig Morrison) __________________________________________
+ *
+ * Version: Full version history can be found on GitHub.
+ *
+ **************************************************************************************************************/
 public class Client {
+	/**
+	 * 
+	 * @param args
+	 *            Takes in command-line arguments from user for handling the
+	 *            application in different ways. This System does not make use
+	 *            of this functionality. 
+	 */
 	public static void main(String[] args) {
 		String version = "0.7";
 		Socket sock = null;
@@ -108,13 +113,14 @@ public class Client {
 			e.printStackTrace();
 			System.exit(1);
 		} catch (IOException e) {
-			//A problem occurred whilst streaming data.
-			System.err.println("An error occurred whilst transferring data. Check your network connection status.");
+			// A problem occurred whilst streaming data.
+			System.err
+					.println("An error occurred whilst transferring data. Check your network connection status.");
 			e.printStackTrace();
 			System.exit(2);
 		} finally {
-			 sc.close();
-			 System.exit(0);
+			sc.close();
+			System.exit(0);
 		}
 	}
 
