@@ -9,8 +9,7 @@
  *
  * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
  * 
- * Author:
- *      Craig Morrison, Reg no: 201247913
+ * Author: Craig Morrison, Reg no: 201247913
  *
  * Lab:
  *      Monday 9am
