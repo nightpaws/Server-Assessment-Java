@@ -41,39 +41,26 @@ public class ServerBootstrap {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		// Server s = new Server();
-		// char input = 'n';
-		// new Thread(s).start();
 
-		// from server.java
 		try {
+			// bind socket, inform of startup and create thread pool.
 			ServerSocket sock = new ServerSocket(6100);
 			System.out.println("Server is running!");
 			ExecutorService executorService = Executors.newCachedThreadPool();
+
+			// loop infinitely
 			while (true) {
 
 				Socket client = sock.accept();
 				executorService.execute(new Server(client));
-				// code below will not execute
-
-				// System.out.println("To quit, press q, then enter at any time:");
-				// input = in.nextLine().charAt(0);
-				// switch (input) {
-				// case 'q':
-				// client.close();
-				// sock.close();
-				// in.close();
-				// executorService.shutdown();
-				// System.out.println("Terminating Server...");
-				// System.exit(0);
-				// break;
-				// default:
-				// ;
-				// }
+				// Code below here will not execute
 			}
 		} catch (IOException ioe) {
-			System.err.println("An Input/Output Exception occurred. The Server will now close. Error: " + e);
+			System.err
+					.println("An Input/Output Exception occurred. The Server will now close. Error: "
+							+ ioe);
 			System.exit(1);
 		}
+		in.close();
 	}
 }
