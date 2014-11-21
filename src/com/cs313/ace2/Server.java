@@ -34,49 +34,66 @@ import java.net.Socket;
 public class Server implements Runnable {
 	protected Socket client;
 
-	public Server(Socket client) {
+	/**
+	 * Constructor to obtain the Socket that the server will be receiving
+	 * connections through.
+	 * 
+	 * @param client
+	 */
+	protected Server(Socket client) {
 		this.client = client;
 	}
 
-	@Override
+	/**
+	 * Run block which is executed in a thread upon being started by
+	 * ServerBootstrap.java
+	 */
 	public void run() {
-//		while (true) {
-			try {
-				// ServerSocket sock = new ServerSocket(6100);
-				// System.out.println("Server is running!");
-				String userInput = "";
-//				 Socket client = sock.accept();
+		// while (true) {
+		try {
+			// System.out.println("Server is running!");
+			String userInput = "";
 
-				// await string from client and read in from buffer
-				userInput = getInput(client, userInput);
-//				Thread.yield();
+			// await string from client and read in from buffer
+			userInput = getInput(client);
 
-				// create message to return to user
-				Message clientReturn = new MessageImpl(userInput);
-				clientReturn.setCounts();
-				// Check value to be returned on server
-				DebugInputCheck(userInput, clientReturn);
-//				Thread.yield();
-				// return message to user
-				output(client, clientReturn);
+			// create message to return to user
+			Message clientReturn = new MessageImpl(userInput);
+			clientReturn.setCounts();
+			
+			// Check value to be returned on server
+			DebugInputCheck(userInput, clientReturn);
 
-				// Remember to close the stream
-				// client.close();
-				// sock.close();
-				// System.out.println("Stream has been closed");
-				if (Thread.currentThread().isInterrupted()) {
-					System.out.println("I'm interrupted!");
-//					break;
-				}
-			} catch (IOException ioe) {
-				System.err.println(ioe);
+			// return message to user
+			output(client, clientReturn);
+
+			// Remember to close the stream
+			 client.close();
+			// sock.close();
+			// System.out.println("Stream has been closed");
+			if (Thread.currentThread().isInterrupted()) {
+				System.out.println("I'm interrupted!");
+				// break;
 			}
-//		}
+		} catch (IOException ioe) {
+			System.err.println(ioe);
+		}
+		// }
 
 	}
 
-	private static String getInput(Socket client, String userInput)
-			throws IOException {
+	/**
+	 * 
+	 * Helper Method to obtain a users input on a specified socket and return
+	 * the value to the provided string
+	 * 
+	 * @param client
+	 * @param userInput
+	 * @return
+	 * @throws IOException
+	 */
+	private static String getInput(Socket client) throws IOException {
+		String userInput;
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				client.getInputStream()));
 		userInput = br.readLine();
@@ -84,6 +101,15 @@ public class Server implements Runnable {
 		return userInput;
 	}
 
+	/**
+	 * A server side method for displaying the current state of the Message
+	 * Object to show that the content being returned in the server console.
+	 * 
+	 * @param userInput
+	 *            The string received by the user
+	 * @param clientReturn
+	 *            The Message Object the server has prepared for returning
+	 */
 	private static void DebugInputCheck(String userInput, Message clientReturn) {
 		System.out
 				.println("Message to be returned has been generated as follows");
@@ -94,6 +120,12 @@ public class Server implements Runnable {
 
 	}
 
+	/**
+	 * 
+	 * @param client
+	 * @param clientReturn
+	 * @throws IOException
+	 */
 	private static void output(Socket client, Message clientReturn)
 			throws IOException {
 		ObjectOutputStream outStream = new ObjectOutputStream(

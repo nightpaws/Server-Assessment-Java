@@ -36,18 +36,26 @@ import java.util.Scanner;
 public class Client {
 	/**
 	 * 
+	 * Main class where execution of the client application commences from. This
+	 * class prompts users for input, then sends the data to the server
+	 * specified. Once sending is complete, it will await a response in the form
+	 * of a Message object, which it then outputs to the user via command line.
+	 * 
 	 * @param args
 	 *            Takes in command-line arguments from user for handling the
 	 *            application in different ways. This System does not make use
-	 *            of this functionality. 
+	 *            of this functionality.
 	 */
 	public static void main(String[] args) {
-		String version = "0.7";
+		String version = "0.9";
 		Socket sock = null;
 		Scanner sc = new Scanner(System.in);
 		String userInput = "";
 
-		// Output Program Information
+		/*
+		 * Information for user describing project. A bit untidy in the code
+		 * view thanks to Eclipse's wrapping function
+		 */
 		System.out
 				.println("Craig Morrison\t\t\t\t Assessed Coursework Exercise 2\t\t\t\tVersion: "
 						+ version);
@@ -57,28 +65,26 @@ public class Client {
 		System.out.println("Please enter a string of text to be processed:");
 		userInput = sc.nextLine();
 
-		// Open connection to server
 		try {
+			// New socket for connecting to server on port 6100 at localhost
 			sock = new Socket("127.0.0.1", 6100);
 			System.out
 					.println("\n=========\nProcessing:\nSocket Opened on client\n");
 
-			// send the data to the server
+			// Use PrintWriter to send the data from userInput to the server
 			PrintWriter out = new PrintWriter(sock.getOutputStream(), true);
 			out.println(userInput);
-			// out.close();
 			System.out.println("User Input data sent to the server...");
 
 			// receive the response from the server
 			System.out.println("Recieving response...");
 			InputStream in = sock.getInputStream();
 			ObjectInputStream inStream = new ObjectInputStream(in);
-			Object recieved;
-			// in.close();
 			System.out.println("Response recieved from the server...");
 
-			// wait whilst received is null
-			while ((recieved = inStream.readObject()) == null)
+			// wait whilst received is null and stream input into 'received'
+			Object received;
+			while ((received = inStream.readObject()) == null)
 				;
 
 			// Receive the output from server and display to the user
@@ -86,8 +92,8 @@ public class Client {
 
 			MessageImpl imp1 = null;
 
-			if (recieved instanceof Message) {
-				imp1 = (MessageImpl) recieved;
+			if (received instanceof Message) {
+				imp1 = (MessageImpl) received;
 				System.out.println("Character count is: "
 						+ imp1.getCharacterCount());
 				System.out.println("Digit count for is: "
