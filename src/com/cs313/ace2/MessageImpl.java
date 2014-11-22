@@ -21,17 +21,18 @@
  *
  * Version: Full version history can be found on GitHub.
  *
- **************************************************************************************************************/package com.cs313.ace2;
+ **************************************************************************************************************/
+package com.cs313.ace2;
 
 import java.io.Serializable;
 
-public class MessageImpl implements Message,Serializable {
+public class MessageImpl implements Message, Serializable {
 	/**
-	 * 
+	 * serialVersionUID = identifier for serialisation in this implementation of
+	 * the Message Interface. Required by java.io.Serializable.
 	 */
 	private static final long serialVersionUID = -8355523039598854001L;
-	
-	
+
 	// Message to be sent back to the client after they message the server
 	protected String userInput = null;
 	protected int charCount = 0, digitCount = 0;
@@ -40,7 +41,6 @@ public class MessageImpl implements Message,Serializable {
 		userInput = inputString;
 	}
 
-	@Override
 	public void setCounts() {
 		// set the counts for characters and digits
 		for (int i = 0; i < userInput.length(); i++) {
@@ -52,13 +52,12 @@ public class MessageImpl implements Message,Serializable {
 		}
 	}
 
-	@Override
 	public int getCharacterCount() {
 		// return the number of characters
 		return charCount;
 	}
 
-	@Override
+	
 	public int getDigitCount() {
 		// return the number of digits
 		return digitCount;
