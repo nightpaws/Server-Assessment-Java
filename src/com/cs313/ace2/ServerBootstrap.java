@@ -1,21 +1,8 @@
-package com.cs313.ace2;
-
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.Scanner;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-/***************************************************************************************************************
+/* ==============================================================================
  *
  * Filename: ServerBootstrap.java
  *
  * Synopsis: Bootstrap for ACE2
- *
- * This class provides a caching thread pool which creates an instance of the
- * server class to process user input as it is received by the system. It opens
- * a socket and simply waits until it is required.
  *
  * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
  * 
@@ -29,7 +16,25 @@ import java.util.concurrent.Executors;
  *
  * Version: Full version history can be found on GitHub.
  *
- **************************************************************************************************************/
+ * =============================================================================*/
+package com.cs313.ace2;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+ * This class provides a caching thread pool which creates an instance of the
+ * server class to process user input as it is received by the system. It opens
+ * a socket and simply waits until it is required.
+ * 
+ * @author Craig Morrison
+ * @version 1.0
+ *
+ */
 public class ServerBootstrap {
 
 	/**

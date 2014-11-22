@@ -1,24 +1,9 @@
-package com.cs313.ace2;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.PrintWriter;
-import java.net.ConnectException;
-import java.net.Socket;
-import java.util.Scanner;
-
-/***************************************************************************************************************
+/* ==============================================================================
  *
  * Filename: Client.java
  * 
  * Synopsis: Client Command Line Interface for ACE2
  *
- * This is a client interface for interacting with a corresponding Server. This
- * class receives user input in the form of a text string, then submits the data
- * as a string to the server. It then waits for a Message object in response
- * which it then returns to the user detailing the length, and number of digits
- * within the string.
  *
  * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
  * 
@@ -32,7 +17,28 @@ import java.util.Scanner;
  *
  * Version: Full version history can be found on GitHub.
  *
- **************************************************************************************************************/
+ * =============================================================================*/
+package com.cs313.ace2;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.PrintWriter;
+import java.net.ConnectException;
+import java.net.Socket;
+import java.util.Scanner;
+
+/**
+ * This is a client interface for interacting with a corresponding Server. This
+ * class receives user input in the form of a text string, then submits the data
+ * as a string to the server. It then waits for a Message object in response
+ * which it then returns to the user detailing the length, and number of digits
+ * within the string.
+ * 
+ * @author Craig Morrison
+ * @version 1.0
+ *
+ */
 public class Client {
 	/**
 	 * 
@@ -141,7 +147,8 @@ public class Client {
 
 		/*
 		 * After execution has completed, check if the user wishes to run
-		 * another query. Either repeat program or terminate gracefully accordingly
+		 * another query. Either repeat program or terminate gracefully
+		 * accordingly
 		 */
 		System.out.println("Run the program again? y|n");
 		char r = sc.nextLine().charAt(0);

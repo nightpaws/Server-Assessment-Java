@@ -1,21 +1,8 @@
-package com.cs313.ace2;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
-
-/***************************************************************************************************************
+/* ==============================================================================
  *
  * Filename: Server.java
  *
  * Synopsis: Server Class for ACE2
- *
- * This is a Runnable Server Interface which can be executed in a thread by
- * another class. It receives an input string from a client system connecting to
- * the same port and then processes it, providing a Message object which it then
- * returns to the client system.
  *
  * GitHub Repository: https://github.com/nightpaws/CS313-Assessed-Coursework-2
  * 
@@ -29,7 +16,25 @@ import java.net.Socket;
  *
  * Version: Full version history can be found on GitHub.
  *
- **************************************************************************************************************/
+ * =============================================================================*/
+package com.cs313.ace2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+
+/**
+ * This is a Runnable Server Interface which can be executed in a thread by
+ * another class. It receives an input string from a client system connecting to
+ * the same port and then processes it, providing a Message object which it then
+ * returns to the client system.
+ * 
+ * @author Craig Morrison
+ * @version 1.0
+ *
+ */
 public class Server implements Runnable {
 	protected Socket client;
 
