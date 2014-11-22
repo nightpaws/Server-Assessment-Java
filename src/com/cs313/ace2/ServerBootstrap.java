@@ -38,6 +38,9 @@ public class ServerBootstrap {
 	 * the starting of new server class instances
 	 * 
 	 * @param args
+	 *            Takes in command-line arguments from user for handling the
+	 *            application in different ways. This System does not make use
+	 *            of this functionality.
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
