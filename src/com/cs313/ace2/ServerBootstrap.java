@@ -52,6 +52,7 @@ public class ServerBootstrap {
 
 		try {
 			// bind socket, inform of startup and create thread pool.
+			@SuppressWarnings("resource")
 			ServerSocket sock = new ServerSocket(6100);
 			System.out.println("Server is running!");
 			ExecutorService executorService = Executors.newCachedThreadPool();
