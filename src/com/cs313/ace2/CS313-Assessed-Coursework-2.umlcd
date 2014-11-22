@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_HSDPYHHgEeSropXwu4fUHw">
+  <modelElement href="CS313-Assessed-Coursework-2.uml#_IIwN4HHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Itf5sHHgEeSropXwu4fUHw" targetItem="_Itn1gHHgEeSropXwu4fUHw" sourceItem="_ItddcHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IwdHEHHgEeSropXwu4fUHw" targetItem="_IwuM0HHgEeSropXwu4fUHw" sourceItem="_IwcgAHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IwhYgXHgEeSropXwu4fUHw" targetItem="_IwuM73HgEeSropXwu4fUHw" sourceItem="_IwhYgHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IwimoXHgEeSropXwu4fUHw" targetItem="_IwuM8XHgEeSropXwu4fUHw" sourceItem="_IwimoHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Iwj0wXHgEeSropXwu4fUHw" targetItem="_IwuM9XHgEeSropXwu4fUHw" sourceItem="_Iwj0wHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IxHOYHHgEeSropXwu4fUHw" targetItem="_IxJqoHHgEeSropXwu4fUHw" sourceItem="_IxGnUHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IxQYUHHgEeSropXwu4fUHw" targetItem="_Ixfo4HHgEeSropXwu4fUHw" sourceItem="_IxPxQHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_IxeawHHgEeSropXwu4fUHw" source="_Ixfo4HHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IP7z8HHgEeSropXwu4fUHw"/>
+    <stereotypes xmi:id="_IxeawXHgEeSropXwu4fUHw" name="Reference">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IP9pIHHgEeSropXwu4fUHw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_IxeawnHgEeSropXwu4fUHw" text=""/>
+    <sourceRole xmi:id="_Ixeaw3HgEeSropXwu4fUHw" aggregationKind="NONE" name="">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IP7z8XHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_IxeaxHHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_IxeaxXHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_IxeaxnHgEeSropXwu4fUHw" aggregationKind="NONE" name="client" navigable="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IPAm4HHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ixeax3HgEeSropXwu4fUHw" label="#"/>
+      <cardinality xmi:id="_IxeayHHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ix1AEHHgEeSropXwu4fUHw" targetItem="_Ix-KAHHgEeSropXwu4fUHw" sourceItem="_Ix0ZAHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Ix1nIHHgEeSropXwu4fUHw" sourceAnchor="319.0,93.0" targetAnchor="0.0,58.0" dashed="true" superClass="_Ix-KAHHgEeSropXwu4fUHw" subClass="_IwuM0HHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_INwCoHHgEeSropXwu4fUHw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ix3cUXHgEeSropXwu4fUHw" targetItem="_Ix-KC3HgEeSropXwu4fUHw" sourceItem="_Ix3cUHHgEeSropXwu4fUHw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WvOvEHHgEeSropXwu4fUHw" sourceAnchor="0.0,27.0" targetAnchor="382.0,120.0" target="_Ixfo4HHgEeSropXwu4fUHw" source="_Itn1gHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_WufIMHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_WvOvEXHgEeSropXwu4fUHw"/>
+    <nameVisual xmi:id="_WvOvEnHgEeSropXwu4fUHw" text="">
+      <visualProperties xmi:id="_WySDEHHgEeSropXwu4fUHw" position="-5.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_WvOvE3HgEeSropXwu4fUHw" aggregationKind="NONE" name="serverBootstrap">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_WufvQHHgEeSropXwu4fUHw"/>
+      <visualProperties xmi:id="_WyRcAHHgEeSropXwu4fUHw" position="-122.0,-47.0"/>
+      <visibility xmi:id="_WvOvFHHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_WvOvFXHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WvOvFnHgEeSropXwu4fUHw" aggregationKind="NONE" name="server" navigable="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_WuhkcHHgEeSropXwu4fUHw"/>
+      <visualProperties xmi:id="_WySqIHHgEeSropXwu4fUHw" position="31.0,2.0"/>
+      <visibility xmi:id="_WvOvF3HgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_WvOvGHHgEeSropXwu4fUHw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_iiQ4QHHgEeSropXwu4fUHw" sourceAnchor="50.0,54.0" targetAnchor="137.0,0.0" target="_Ixfo4HHgEeSropXwu4fUHw" source="_IxJqoHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_iiLYsHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_iiQ4QXHgEeSropXwu4fUHw"/>
+    <nameVisual xmi:id="_iiQ4QnHgEeSropXwu4fUHw" text="">
+      <visualProperties xmi:id="_ikwyoHHgEeSropXwu4fUHw" position="2.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_iiRfUHHgEeSropXwu4fUHw" aggregationKind="NONE" name="client1" navigable="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_iiL_wHHgEeSropXwu4fUHw"/>
+      <visualProperties xmi:id="_ikvkgHHgEeSropXwu4fUHw" position="-52.0,31.666666666666657"/>
+      <visibility xmi:id="_iiRfUXHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_iiRfUnHgEeSropXwu4fUHw" label="0..1" max="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_iiRfU3HgEeSropXwu4fUHw" aggregationKind="NONE" name="server" navigable="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_iiMm0HHgEeSropXwu4fUHw"/>
+      <visualProperties xmi:id="_ikwyoXHgEeSropXwu4fUHw" position="1.9999999999999716,-76.66666666666669"/>
+      <visibility xmi:id="_iiRfVHHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_iiRfVXHgEeSropXwu4fUHw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_LTpAEXHhEeSropXwu4fUHw" sourceAnchor="0.0,97.0" targetAnchor="80.0,54.0" client="_IwuM0HHgEeSropXwu4fUHw" supplier="_IxJqoHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_LTpAEHHhEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_LTpAEnHhEeSropXwu4fUHw"/>
+    <bendpoints xmi:id="_c7TaUHHhEeSropXwu4fUHw" sourceX="-376" targetY="90"/>
+    <nameVisual xmi:id="_LTpAE3HhEeSropXwu4fUHw" text=""/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:DependencyVisual" xmi:id="_Lk_10XHhEeSropXwu4fUHw" sourceAnchor="0.0,8.0" targetAnchor="382.0,78.0" client="_IwuM9XHgEeSropXwu4fUHw" supplier="_Ixfo4HHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_Lk_10HHhEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_LlF8cHHhEeSropXwu4fUHw"/>
+    <bendpoints xmi:id="_c7TaUXHhEeSropXwu4fUHw" sourceX="-10" targetX="157" targetY="-137"/>
+    <bendpoints xmi:id="_c7TaUnHhEeSropXwu4fUHw" sourceX="-10" sourceY="137" targetX="157"/>
+    <nameVisual xmi:id="_LlF8cXHhEeSropXwu4fUHw" text=""/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ItddcHHgEeSropXwu4fUHw" sourceConnectionVisual="_Itf5sHHgEeSropXwu4fUHw" text="This class provides a caching thread pool which creates an instance of the&#xD;&#xA;server class to process user input as it is received by the system. It opens&#xD;&#xA;a socket and simply waits until it is required.&#xD;&#xA;&#xD;&#xA;@author Craig Morrison&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_Itn1gHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPxb4HHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IwcgAHHgEeSropXwu4fUHw" sourceConnectionVisual="_IwdHEHHgEeSropXwu4fUHw" text="This is an implementation of the Message interface which allows the server to&#xD;&#xA;communicate its working with the client. This defines the workings of&#xD;&#xA;operations that the server may call upon the object such as the logic for&#xD;&#xA;defining of methods such as setCount().&#xD;&#xA;&#xD;&#xA;@author Craig Morrison&#xD;&#xA;@version 1.0" item="_IwuM0HHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPquMnHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IwhYgHHgEeSropXwu4fUHw" sourceConnectionVisual="_IwhYgXHgEeSropXwu4fUHw" text="Set the count values of charCount and digitCount based upon the user&#xD;&#xA;&#x9; * input provided" item="_IwuM73HgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPwNwHHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IwimoHHgEeSropXwu4fUHw" sourceConnectionVisual="_IwimoXHgEeSropXwu4fUHw" text="Return the value stored in charCount" item="_IwuM8XHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPwNwXHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Iwj0wHHgEeSropXwu4fUHw" sourceConnectionVisual="_Iwj0wXHgEeSropXwu4fUHw" text="Return the value stored in digitCount" item="_IwuM9XHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPwNwnHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IxGnUHHgEeSropXwu4fUHw" sourceConnectionVisual="_IxHOYHHgEeSropXwu4fUHw" text="This is a client interface for interacting with a corresponding Server. This&#xD;&#xA;class receives user input in the form of a text string, then submits the data&#xD;&#xA;as a string to the server. It then waits for a Message object in response&#xD;&#xA;which it then returns to the user detailing the length, and number of digits&#xD;&#xA;within the string.&#xD;&#xA;&#xD;&#xA;@author Craig Morrison&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_IxJqoHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPqHIHHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IxPxQHHgEeSropXwu4fUHw" sourceConnectionVisual="_IxQYUHHgEeSropXwu4fUHw" text="This is a Runnable Server Interface which can be executed in a thread by&#xD;&#xA;another class. It receives an input string from a client system connecting to&#xD;&#xA;the same port and then processes it, providing a Message object which it then&#xD;&#xA;returns to the client system.&#xD;&#xA;&#xD;&#xA;@author Craig Morrison&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_Ixfo4HHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPw00HHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ix0ZAHHgEeSropXwu4fUHw" sourceConnectionVisual="_Ix1AEHHgEeSropXwu4fUHw" text="A bare ADT for defining the structure of a Message object as used by the&#xD;&#xA;server to communicate its working back to the client.&#xD;&#xA;&#xD;&#xA;@author Craig Morrison&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_Ix-KAHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPquMHHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ix3cUHHgEeSropXwu4fUHw" sourceConnectionVisual="_Ix3cUXHgEeSropXwu4fUHw" text="set the counts for characters and digits" item="_Ix-KC3HgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IPquMXHgEeSropXwu4fUHw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IxwuoHHgEeSropXwu4fUHw" name="IOException">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IM-mkHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_IxwuoXHgEeSropXwu4fUHw" position="70.0,-112.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_IxwuonHgEeSropXwu4fUHw" name="Reference">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_INCQ8HHgEeSropXwu4fUHw"/>
+    </stereotypes>
+    <visibility xmi:id="_Ixwuo3HgEeSropXwu4fUHw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Itn1gHHgEeSropXwu4fUHw" comments="_ItddcHHgEeSropXwu4fUHw" targetConnectionVisual="_Itf5sHHgEeSropXwu4fUHw" name="ServerBootstrap" associationsOut="_WvOvEHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_ILmGgHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_Itn1gXHgEeSropXwu4fUHw" position="613.0,489.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Itn1gnHgEeSropXwu4fUHw" label="+"/>
+    <attributes xmi:id="_WvRyYHHgEeSropXwu4fUHw" name="server">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_WuhkcHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_WvRyYXHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_WvRyYnHgEeSropXwu4fUHw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_WvRyY3HgEeSropXwu4fUHw" name="Server">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILPhMHHgEeSropXwu4fUHw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Itn1g3HgEeSropXwu4fUHw" name="main" staticOperation="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILn7sHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Itn1hHHgEeSropXwu4fUHw" label="+"/>
+      <parameters xmi:id="_Itn1hXHgEeSropXwu4fUHw" name="args">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILn7sXHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Itn1hnHgEeSropXwu4fUHw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Ix-KAHHgEeSropXwu4fUHw" comments="_Ix0ZAHHgEeSropXwu4fUHw" targetConnectionVisual="_Ix1AEHHgEeSropXwu4fUHw" name="Message" subclassedBy="_Ix1nIHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IK1RgHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_Ix-KAXHgEeSropXwu4fUHw" position="1055.0,193.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ix-KAnHgEeSropXwu4fUHw" label="+"/>
+    <attributes xmi:id="_Ix-KA3HgEeSropXwu4fUHw" name="characterCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IK4U0HHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ix-KBHHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_Ix-KBXHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ix-KBnHgEeSropXwu4fUHw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ix-KB3HgEeSropXwu4fUHw" name="digitCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IK6KAHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ix-KCHHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_Ix-KCXHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ix-KCnHgEeSropXwu4fUHw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ix-KC3HgEeSropXwu4fUHw" comments="_Ix3cUHHgEeSropXwu4fUHw" targetConnectionVisual="_Ix3cUXHgEeSropXwu4fUHw" name="setCounts">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IK3GsHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ix-KDHHgEeSropXwu4fUHw" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IwuM0HHgEeSropXwu4fUHw" comments="_IwcgAHHgEeSropXwu4fUHw" targetConnectionVisual="_IwdHEHHgEeSropXwu4fUHw" using="_LTpAEXHhEeSropXwu4fUHw" name="MessageImpl" generalizations="_Ix1nIHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IK7_MHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_IwuM0XHgEeSropXwu4fUHw" position="603.0,158.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_IwuM0nHgEeSropXwu4fUHw" label="+"/>
+    <attributes xmi:id="_IwuM03HgEeSropXwu4fUHw" defaultValue="-8355523039598854001L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IO3c8HHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_IwuM1HHgEeSropXwu4fUHw" label="-"/>
+      <cardinality xmi:id="_IwuM1XHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_IwuM1nHgEeSropXwu4fUHw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IwuM13HgEeSropXwu4fUHw" defaultValue="null" name="userInput">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IO5SIHHgEeSropXwu4fUHw"/>
+      <stereotypes xmi:id="_IwuM2HHgEeSropXwu4fUHw" name="LegacyStyledElement">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IO7HUHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <visibility xmi:id="_IwuM2XHgEeSropXwu4fUHw" label="#"/>
+      <cardinality xmi:id="_IwuM2nHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_IwuM23HgEeSropXwu4fUHw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IwuM3HHgEeSropXwu4fUHw" defaultValue="0" name="charCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IO8VcHHgEeSropXwu4fUHw"/>
+      <stereotypes xmi:id="_IwuM3XHgEeSropXwu4fUHw" name="MultiDeclaration">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IO88gHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IwuM3nHgEeSropXwu4fUHw" name="LegacyStyledElement">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IO-KoHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <visibility xmi:id="_IwuM33HgEeSropXwu4fUHw" label="#"/>
+      <cardinality xmi:id="_IwuM4HHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_IwuM4XHgEeSropXwu4fUHw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IwuM4nHgEeSropXwu4fUHw" defaultValue="0" name="digitCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IPsjYHHgEeSropXwu4fUHw"/>
+      <stereotypes xmi:id="_IwuM43HgEeSropXwu4fUHw" name="MultiDeclaration">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IPtxgHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IwuM5HHgEeSropXwu4fUHw" name="LegacyStyledElement">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IPu_oHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <visibility xmi:id="_IwuM5XHgEeSropXwu4fUHw" label="#"/>
+      <cardinality xmi:id="_IwuM5nHgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_IwuM53HgEeSropXwu4fUHw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_IwuM6HHgEeSropXwu4fUHw" name="MessageImpl">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILDT8HHgEeSropXwu4fUHw"/>
+      <keywords xmi:id="_IwuM6XHgEeSropXwu4fUHw" keyword="create"/>
+      <visibility xmi:id="_IwuM6nHgEeSropXwu4fUHw" label="+"/>
+      <outParameters xmi:id="_IwuM63HgEeSropXwu4fUHw">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILEiEXHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IwuM7HHgEeSropXwu4fUHw" name="MessageImpl">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_IK7_MHHgEeSropXwu4fUHw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_IwuM7XHgEeSropXwu4fUHw" name="inputString">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILDT8XHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IwuM7nHgEeSropXwu4fUHw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_IwuM73HgEeSropXwu4fUHw" comments="_IwhYgHHgEeSropXwu4fUHw" targetConnectionVisual="_IwhYgXHgEeSropXwu4fUHw" name="setCounts">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILFwMHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_IwuM8HHgEeSropXwu4fUHw" label="+"/>
+    </operations>
+    <operations xmi:id="_IwuM8XHgEeSropXwu4fUHw" comments="_IwimoHHgEeSropXwu4fUHw" targetConnectionVisual="_IwimoXHgEeSropXwu4fUHw" name="getCharacterCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILGXQHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_IwuM8nHgEeSropXwu4fUHw" label="+"/>
+      <outParameters xmi:id="_IwuM83HgEeSropXwu4fUHw">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILHlYHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IwuM9HHgEeSropXwu4fUHw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IwuM9XHgEeSropXwu4fUHw" comments="_Iwj0wHHgEeSropXwu4fUHw" targetConnectionVisual="_Iwj0wXHgEeSropXwu4fUHw" using="_Lk_10XHhEeSropXwu4fUHw" name="getDigitCount">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILIMcHHgEeSropXwu4fUHw"/>
+      <visualProperties xmi:id="_LnYbcHHhEeSropXwu4fUHw" position="609.0,329.0" size="144.0,17.0"/>
+      <visibility xmi:id="_IwuM9nHgEeSropXwu4fUHw" label="+"/>
+      <outParameters xmi:id="_IwuM93HgEeSropXwu4fUHw">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILIzgHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IwuM-HHgEeSropXwu4fUHw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ixfo4HHgEeSropXwu4fUHw" comments="_IxPxQHHgEeSropXwu4fUHw" targetConnectionVisual="_IxQYUHHgEeSropXwu4fUHw" supplying="_Lk_10XHhEeSropXwu4fUHw" name="Server" associationsIn="_WvOvEHHgEeSropXwu4fUHw _iiQ4QHHgEeSropXwu4fUHw" associationsOut="_IxeawHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_ILPhMHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_Ixfo4XHgEeSropXwu4fUHw" position="60.0,396.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ixfo4nHgEeSropXwu4fUHw" label="+"/>
+    <attributes xmi:id="_Ixfo43HgEeSropXwu4fUHw" name="client">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IPAm4HHgEeSropXwu4fUHw"/>
+      <stereotypes xmi:id="_Ixfo5HHgEeSropXwu4fUHw" name="LegacyStyledElement">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IPB1AHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ixfo5XHgEeSropXwu4fUHw" name="LegacyStyledElement">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IPB1AHHgEeSropXwu4fUHw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ixfo5nHgEeSropXwu4fUHw" label="#"/>
+      <cardinality xmi:id="_Ixfo53HgEeSropXwu4fUHw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ixfo6HHgEeSropXwu4fUHw" name="Socket">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_INVL4HHgEeSropXwu4fUHw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_iiStcHHgEeSropXwu4fUHw" name="client1">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_iiL_wHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_iiStcXHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_iiStcnHgEeSropXwu4fUHw" label="0..1" max="1"/>
+      <type xmi:id="_iiStc3HgEeSropXwu4fUHw" name="Client">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IKDOYHHgEeSropXwu4fUHw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ixfo6XHgEeSropXwu4fUHw" name="run">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_ILUZsHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ixfo6nHgEeSropXwu4fUHw" label="+"/>
+    </operations>
+    <operations xmi:id="_Ixfo63HgEeSropXwu4fUHw" name="DebugInputCheck" staticOperation="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IOC9kHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ixfo7HHgEeSropXwu4fUHw" label="-"/>
+      <parameters xmi:id="_Ixfo7XHgEeSropXwu4fUHw" name="userInput">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOC9kXHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo7nHgEeSropXwu4fUHw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Ixfo73HgEeSropXwu4fUHw" name="clientReturn">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOC9knHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo8HHgEeSropXwu4fUHw" name="Message">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_IK1RgHHgEeSropXwu4fUHw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ixfo8XHgEeSropXwu4fUHw" name="Server">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IOnlUHHgEeSropXwu4fUHw"/>
+      <keywords xmi:id="_Ixfo8nHgEeSropXwu4fUHw" keyword="create"/>
+      <visibility xmi:id="_Ixfo83HgEeSropXwu4fUHw" label="#"/>
+      <outParameters xmi:id="_Ixfo9HHgEeSropXwu4fUHw">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOozcHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo9XHgEeSropXwu4fUHw" name="Server">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_ILPhMHHgEeSropXwu4fUHw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ixfo9nHgEeSropXwu4fUHw" name="client">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOnlUXHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo93HgEeSropXwu4fUHw" name="Socket">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_INVL4HHgEeSropXwu4fUHw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ixfo-HHgEeSropXwu4fUHw" name="getInput" staticOperation="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IOrPsHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ixfo-XHgEeSropXwu4fUHw" label="-"/>
+      <outParameters xmi:id="_Ixfo-nHgEeSropXwu4fUHw">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOsd0HHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo-3HgEeSropXwu4fUHw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ixfo_HHgEeSropXwu4fUHw" name="client">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOr2wHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_Ixfo_XHgEeSropXwu4fUHw" name="Socket">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_INVL4HHgEeSropXwu4fUHw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ixfo_nHgEeSropXwu4fUHw" name="output" staticOperation="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IOykcHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_Ixfo_3HgEeSropXwu4fUHw" label="-"/>
+      <parameters xmi:id="_IxfpAHHgEeSropXwu4fUHw" name="client">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOykcXHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IxfpAXHgEeSropXwu4fUHw" name="Socket">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_INVL4HHgEeSropXwu4fUHw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_IxfpAnHgEeSropXwu4fUHw" name="clientReturn">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IOzLgHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IxfpA3HgEeSropXwu4fUHw" name="Message">
+          <modelElement href="CS313-Assessed-Coursework-2.uml#_IK1RgHHgEeSropXwu4fUHw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IxJqoHHgEeSropXwu4fUHw" comments="_IxGnUHHgEeSropXwu4fUHw" targetConnectionVisual="_IxHOYHHgEeSropXwu4fUHw" supplying="_LTpAEXHhEeSropXwu4fUHw" name="Client" associationsOut="_iiQ4QHHgEeSropXwu4fUHw">
+    <modelElement href="CS313-Assessed-Coursework-2.uml#_IKDOYHHgEeSropXwu4fUHw"/>
+    <visualProperties xmi:id="_IxJqoXHgEeSropXwu4fUHw" position="147.0,111.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_IxJqonHgEeSropXwu4fUHw" label="+"/>
+    <attributes xmi:id="_iiUioHHgEeSropXwu4fUHw" name="server">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_iiMm0HHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_iiUioXHgEeSropXwu4fUHw" label="+"/>
+      <cardinality xmi:id="_iiUionHgEeSropXwu4fUHw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_iiUio3HgEeSropXwu4fUHw" name="Server">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_ILPhMHHgEeSropXwu4fUHw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_IxJqo3HgEeSropXwu4fUHw" name="main" staticOperation="true">
+      <modelElement href="CS313-Assessed-Coursework-2.uml#_IKesMHHgEeSropXwu4fUHw"/>
+      <visibility xmi:id="_IxJqpHHgEeSropXwu4fUHw" label="+"/>
+      <parameters xmi:id="_IxJqpXHgEeSropXwu4fUHw" name="args">
+        <modelElement href="CS313-Assessed-Coursework-2.uml#_IKfTQHHgEeSropXwu4fUHw"/>
+        <type xmi:id="_IxJqpnHgEeSropXwu4fUHw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

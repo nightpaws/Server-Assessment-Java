@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_HPV5oHHgEeSropXwu4fUHw" name="CS313_Assessed_Coursework_2">
+    <eAnnotations xmi:id="_HnRRcHHgEeSropXwu4fUHw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_HnR4gHHgEeSropXwu4fUHw" source="codegen">
+        <details xmi:id="_HnR4gXHgEeSropXwu4fUHw" key="codegenDirectory" value="/CS313-Assessed-Coursework-2/src"/>
+        <details xmi:id="_IrwNQHHgEeSropXwu4fUHw" key="AssociatedSourceCode" value="/CS313-Assessed-Coursework-2/src/com/cs313/ace2/Client.java;3487999012/1;/CS313-Assessed-Coursework-2/src/com/cs313/ace2/Message.java;1181454386/1;/CS313-Assessed-Coursework-2/src/com/cs313/ace2/MessageImpl.java;3007830697/1;/CS313-Assessed-Coursework-2/src/com/cs313/ace2/Server.java;695099596/1;/CS313-Assessed-Coursework-2/src/com/cs313/ace2/ServerBootstrap.java;594466267/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_IKZzsHHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_IKaawHHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_IKaawXHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_IKaawnHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_IKaaw3HgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_IKbB0HHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_IKbo4HHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_IKbo4XHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_IKc3AHHgEeSropXwu4fUHw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IIST0HHgEeSropXwu4fUHw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_IIS64HHgEeSropXwu4fUHw" name="cs313">
+        <packagedElement xmi:type="uml:Package" xmi:id="_IIwN4HHgEeSropXwu4fUHw" name="ace2">
+          <packagedElement xmi:type="uml:Class" xmi:id="_IKDOYHHgEeSropXwu4fUHw" name="Client">
+            <ownedComment xmi:id="_IPqHIHHgEeSropXwu4fUHw">
+              <body>This is a client interface for interacting with a corresponding Server. This&#xD;
+class receives user input in the form of a text string, then submits the data&#xD;
+as a string to the server. It then waits for a Message object in response&#xD;
+which it then returns to the user detailing the length, and number of digits&#xD;
+within the string.&#xD;
+&#xD;
+@author Craig Morrison&#xD;
+@version 1.0&#xD;
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_iiMm0HHgEeSropXwu4fUHw" name="server" type="_ILPhMHHgEeSropXwu4fUHw" association="_iiLYsHHgEeSropXwu4fUHw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iiMm0XHgEeSropXwu4fUHw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iiMm0nHgEeSropXwu4fUHw" value="*"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPbdoHHgEeSropXwu4fUHw" name="main" specification="_IKesMHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPbdoXHgEeSropXwu4fUHw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IPbdonHgEeSropXwu4fUHw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>String version = &quot;0.9&quot;;&#xD;
+		Socket sock = null;&#xD;
+		Scanner sc = new Scanner(System.in);&#xD;
+		String userInput = &quot;&quot;;&#xD;
+&#xD;
+		/*&#xD;
+		 * Information for user describing project. A bit untidy in the code&#xD;
+		 * view thanks to Eclipse's wrapping function&#xD;
+		 */&#xD;
+		System.out&#xD;
+				.println(&quot;Craig Morrison\t\t\t\t Assessed Coursework Exercise 2\t\t\t\tVersion: &quot;&#xD;
+						+ version);&#xD;
+		System.out.println(&quot;Student ID 201247913\n\n&quot;);&#xD;
+&#xD;
+		// Obtain user input to send to server&#xD;
+		System.out.println(&quot;Please enter a string of text to be processed:&quot;);&#xD;
+		userInput = sc.nextLine();&#xD;
+&#xD;
+		try {&#xD;
+			// New socket for connecting to server on port 6100 at localhost&#xD;
+			sock = new Socket(&quot;127.0.0.1&quot;, 6100);&#xD;
+			System.out&#xD;
+					.println(&quot;\n=========\nProcessing:\nSocket Opened on client\n&quot;);&#xD;
+&#xD;
+			// Use PrintWriter to send the data from userInput to the server&#xD;
+			PrintWriter out = new PrintWriter(sock.getOutputStream(), true);&#xD;
+			out.println(userInput);&#xD;
+			System.out.println(&quot;User Input data sent to the server...&quot;);&#xD;
+&#xD;
+			// receive the response from the server&#xD;
+			System.out.println(&quot;Recieving response...&quot;);&#xD;
+			InputStream in = sock.getInputStream();&#xD;
+			ObjectInputStream inStream = new ObjectInputStream(in);&#xD;
+			System.out.println(&quot;Response recieved from the server...&quot;);&#xD;
+&#xD;
+			/*&#xD;
+			 * spinlock whilst received is null and then stream input into&#xD;
+			 * 'received' object for outputting to client&#xD;
+			 */&#xD;
+			Object received;&#xD;
+			while ((received = inStream.readObject()) == null)&#xD;
+				;&#xD;
+&#xD;
+			// Receive the output from server and display to the user&#xD;
+			System.out.println(&quot;Now outputting result...\n=========\n&quot;);&#xD;
+&#xD;
+			MessageImpl outMsg = null;&#xD;
+&#xD;
+			/*&#xD;
+			 * a check to see if the message is of the correct format, then&#xD;
+			 * convert and output or respond with error&#xD;
+			 */&#xD;
+			if (received instanceof Message) {&#xD;
+				outMsg = (MessageImpl) received;&#xD;
+				System.out.println(&quot;Character count of the message is: &quot;&#xD;
+						+ outMsg.getCharacterCount());&#xD;
+				System.out.println(&quot;Digit count of the message is: &quot;&#xD;
+						+ outMsg.getDigitCount());&#xD;
+&#xD;
+			} else {&#xD;
+				System.out&#xD;
+						.println(&quot;Message recieved is not of the correct format.&quot;);&#xD;
+			}&#xD;
+&#xD;
+		} catch (ConnectException e) {&#xD;
+			// If Server is not running display error and retry&#xD;
+			System.err&#xD;
+					.println(&quot;Server Connection Unsuccessful. The connection to the server was refused. Is the server online? \n&quot;&#xD;
+							+ e + &quot;\n\n&quot;);&#xD;
+			main(args);&#xD;
+		} catch (ClassNotFoundException e) {&#xD;
+			/*&#xD;
+			 * If Object Input Stream class is not found. Cannot continue so&#xD;
+			 * inform user and exit with stack trace for diagnostics&#xD;
+			 */&#xD;
+			System.err&#xD;
+					.println(&quot;Your system does not have the required Input Stream Class available to run this application &quot;&#xD;
+							+ e + &quot;\n\n&quot;);&#xD;
+			e.printStackTrace();&#xD;
+			System.exit(1);&#xD;
+		} catch (IOException e) {&#xD;
+			/*&#xD;
+			 * A problem occurred whilst streaming data. This error should not&#xD;
+			 * occur under any normal circumstances so stack trace is printed&#xD;
+			 * for diagnosis if it happens.&#xD;
+			 */&#xD;
+			System.err&#xD;
+					.println(&quot;An error occurred whilst transferring data. Check your network connection status.&quot;);&#xD;
+			e.printStackTrace();&#xD;
+			System.exit(2);&#xD;
+		}&#xD;
+&#xD;
+		/*&#xD;
+		 * After execution has completed, check if the user wishes to run&#xD;
+		 * another query. Either repeat program or terminate gracefully&#xD;
+		 * accordingly&#xD;
+		 */&#xD;
+		System.out.println(&quot;Run the program again? y|n&quot;);&#xD;
+		char r = sc.nextLine().charAt(0);&#xD;
+		if (r == 'n') {&#xD;
+			System.out.println(&quot;Terminating the client system. Goodbye!&quot;);&#xD;
+			sc.close();&#xD;
+			System.exit(0);&#xD;
+		} else {&#xD;
+			main(args);&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_IKesMHHgEeSropXwu4fUHw" name="main" isStatic="true" method="_IPbdoHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IKfTQHHgEeSropXwu4fUHw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKy1QHHgEeSropXwu4fUHw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_IK1RgHHgEeSropXwu4fUHw" name="Message">
+            <ownedComment xmi:id="_IPquMHHgEeSropXwu4fUHw">
+              <body>A bare ADT for defining the structure of a Message object as used by the&#xD;
+server to communicate its working back to the client.&#xD;
+&#xD;
+@author Craig Morrison&#xD;
+@version 1.0&#xD;
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_IK4U0HHgEeSropXwu4fUHw" name="characterCount" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_IK6KAHHgEeSropXwu4fUHw" name="digitCount" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_IK3GsHHgEeSropXwu4fUHw" name="setCounts">
+              <ownedComment xmi:id="_IPquMXHgEeSropXwu4fUHw">
+                <body>set the counts for characters and digits</body>
+              </ownedComment>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_IK7_MHHgEeSropXwu4fUHw" name="MessageImpl">
+            <ownedComment xmi:id="_IPquMnHgEeSropXwu4fUHw">
+              <body>This is an implementation of the Message interface which allows the server to&#xD;
+communicate its working with the client. This defines the workings of&#xD;
+operations that the server may call upon the object such as the logic for&#xD;
+defining of methods such as setCount().&#xD;
+&#xD;
+@author Craig Morrison&#xD;
+@version 1.0</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_IO3c8HHgEeSropXwu4fUHw" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_IO4rEHHgEeSropXwu4fUHw" value="-8355523039598854001L"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_IO5SIHHgEeSropXwu4fUHw" name="userInput" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_IO55MHHgEeSropXwu4fUHw" value="null"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_IO8VcHHgEeSropXwu4fUHw" name="charCount" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_IO8VcXHgEeSropXwu4fUHw" value="0"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_IPsjYHHgEeSropXwu4fUHw" name="digitCount" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_IPu_oXHgEeSropXwu4fUHw" value="0"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_INwCoHHgEeSropXwu4fUHw" client="_IK7_MHHgEeSropXwu4fUHw" supplier="_IK1RgHHgEeSropXwu4fUHw" contract="_IK1RgHHgEeSropXwu4fUHw"/>
+            <interfaceRealization xmi:id="_IOb_IHHgEeSropXwu4fUHw" client="_IK7_MHHgEeSropXwu4fUHw" supplier="_INcgoHHgEeSropXwu4fUHw" contract="_INcgoHHgEeSropXwu4fUHw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPjZcHHgEeSropXwu4fUHw" name="MessageImpl" specification="_ILDT8HHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPjZcXHgEeSropXwu4fUHw" name="inputString">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_IPjZcnHgEeSropXwu4fUHw" type="_IK7_MHHgEeSropXwu4fUHw" direction="return"/>
+              <language>java</language>
+              <body>userInput = inputString;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPkAgHHgEeSropXwu4fUHw" name="setCounts" specification="_ILFwMHHgEeSropXwu4fUHw">
+              <language>java</language>
+              <body>// set the counts for characters and digits&#xD;
+		for (int i = 0; i &lt; userInput.length(); i++) {&#xD;
+			userInput.replaceAll(&quot;\\s+&quot;, &quot;&quot;);&#xD;
+			charCount++;&#xD;
+			if (Character.isDigit(userInput.charAt(i))) {&#xD;
+				digitCount++;&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPknkHHgEeSropXwu4fUHw" name="getCharacterCount" specification="_ILGXQHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPknkXHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// return the number of characters&#xD;
+		return charCount;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPlOoHHgEeSropXwu4fUHw" name="getDigitCount" specification="_ILIMcHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPlOoXHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// return the number of digits&#xD;
+		return digitCount;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_ILDT8HHgEeSropXwu4fUHw" name="MessageImpl" method="_IPjZcHHgEeSropXwu4fUHw">
+              <eAnnotations xmi:id="_ILD7AHHgEeSropXwu4fUHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_ILEiEHHgEeSropXwu4fUHw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_ILDT8XHgEeSropXwu4fUHw" name="inputString">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_ILEiEXHgEeSropXwu4fUHw" type="_IK7_MHHgEeSropXwu4fUHw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ILFwMHHgEeSropXwu4fUHw" name="setCounts" method="_IPkAgHHgEeSropXwu4fUHw">
+              <ownedComment xmi:id="_IPwNwHHgEeSropXwu4fUHw">
+                <body>Set the count values of charCount and digitCount based upon the user&#xD;
+	 * input provided</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ILGXQHHgEeSropXwu4fUHw" name="getCharacterCount" method="_IPknkHHgEeSropXwu4fUHw">
+              <ownedComment xmi:id="_IPwNwXHgEeSropXwu4fUHw">
+                <body>Return the value stored in charCount</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_ILHlYHHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ILIMcHHgEeSropXwu4fUHw" name="getDigitCount" method="_IPlOoHHgEeSropXwu4fUHw">
+              <ownedComment xmi:id="_IPwNwnHgEeSropXwu4fUHw">
+                <body>Return the value stored in digitCount</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_ILIzgHHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ILPhMHHgEeSropXwu4fUHw" name="Server">
+            <ownedComment xmi:id="_IPw00HHgEeSropXwu4fUHw">
+              <body>This is a Runnable Server Interface which can be executed in a thread by&#xD;
+another class. It receives an input string from a client system connecting to&#xD;
+the same port and then processes it, providing a Message object which it then&#xD;
+returns to the client system.&#xD;
+&#xD;
+@author Craig Morrison&#xD;
+@version 1.0&#xD;
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_IPAm4HHgEeSropXwu4fUHw" name="client" visibility="protected" type="_INVL4HHgEeSropXwu4fUHw" association="_IP7z8HHgEeSropXwu4fUHw"/>
+            <ownedAttribute xmi:id="_iiL_wHHgEeSropXwu4fUHw" name="client1" type="_IKDOYHHgEeSropXwu4fUHw" association="_iiLYsHHgEeSropXwu4fUHw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iiL_wXHgEeSropXwu4fUHw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iiL_wnHgEeSropXwu4fUHw" value="1"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_IOj68XHgEeSropXwu4fUHw" client="_ILPhMHHgEeSropXwu4fUHw" supplier="_IOhesHHgEeSropXwu4fUHw" contract="_IOhesHHgEeSropXwu4fUHw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPmcwHHgEeSropXwu4fUHw" name="Server" specification="_IOnlUHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPmcwXHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IPmcwnHgEeSropXwu4fUHw" type="_ILPhMHHgEeSropXwu4fUHw" direction="return"/>
+              <language>java</language>
+              <body>this.client = client;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPmcw3HgEeSropXwu4fUHw" name="run" specification="_ILUZsHHgEeSropXwu4fUHw">
+              <language>java</language>
+              <body>try {&#xD;
+			// Create variable for user input and default it to null&#xD;
+			String userInput = &quot;&quot;;&#xD;
+&#xD;
+			// await string from client and read in from buffer&#xD;
+			userInput = getInput(client);&#xD;
+&#xD;
+			// create message to return to user&#xD;
+			Message clientReturn = new MessageImpl(userInput);&#xD;
+			clientReturn.setCounts();&#xD;
+&#xD;
+			// Check value to be returned on server&#xD;
+			DebugInputCheck(userInput, clientReturn);&#xD;
+&#xD;
+			// Return message object to the user&#xD;
+			output(client, clientReturn);&#xD;
+&#xD;
+			// Close the socket&#xD;
+			client.close();&#xD;
+&#xD;
+			// System.out.println(&quot;Stream has been closed&quot;);&#xD;
+			if (Thread.currentThread().isInterrupted()) {&#xD;
+				System.out.println(&quot;I'm interrupted!&quot;);&#xD;
+				// break;&#xD;
+			}&#xD;
+		} catch (IOException ioe) {&#xD;
+			System.err.println(ioe);&#xD;
+		}&#xD;
+		// }&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPnD0HHgEeSropXwu4fUHw" name="getInput" specification="_IOrPsHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPnD0XHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IPnD0nHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>String userInput;&#xD;
+		BufferedReader br = new BufferedReader(new InputStreamReader(&#xD;
+				client.getInputStream()));&#xD;
+		userInput = br.readLine();&#xD;
+		System.out.println(&quot;Input has been read&quot;);&#xD;
+		return userInput;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPnq4HHgEeSropXwu4fUHw" name="DebugInputCheck" specification="_IOC9kHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPnq4XHgEeSropXwu4fUHw" name="userInput">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_IPnq4nHgEeSropXwu4fUHw" name="clientReturn" type="_IK1RgHHgEeSropXwu4fUHw"/>
+              <language>java</language>
+              <body>System.out&#xD;
+				.println(&quot;Message to be returned has been generated as follows&quot;);&#xD;
+		System.out.println(&quot;- User Input was: &quot; + userInput);&#xD;
+		System.out.println(&quot;- Character Count: &quot;&#xD;
+				+ clientReturn.getCharacterCount());&#xD;
+		System.out.println(&quot;- Digit Count: &quot; + clientReturn.getDigitCount());&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPoR8HHgEeSropXwu4fUHw" name="output" specification="_IOykcHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPoR8XHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IPoR8nHgEeSropXwu4fUHw" name="clientReturn" type="_IK1RgHHgEeSropXwu4fUHw"/>
+              <language>java</language>
+              <body>ObjectOutputStream outStream;&#xD;
+		try {&#xD;
+			outStream = new ObjectOutputStream(client.getOutputStream());&#xD;
+			outStream.writeObject(clientReturn);&#xD;
+			System.out.println(&quot;Output to client successful&quot;);&#xD;
+		} catch (IOException e) {&#xD;
+			System.err.println(&quot;Output unsuccessful.\n&quot;&#xD;
+					+ &quot;Something is wrong with the client connection.\n&quot;&#xD;
+					+ &quot;Check connectivity and try again. Error: &quot; + e);&#xD;
+			e.printStackTrace();&#xD;
+			System.exit(5);&#xD;
+		}&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_ILUZsHHgEeSropXwu4fUHw" name="run" method="_IPmcw3HgEeSropXwu4fUHw"/>
+            <ownedOperation xmi:id="_IOC9kHHgEeSropXwu4fUHw" name="DebugInputCheck" visibility="private" isStatic="true" method="_IPnq4HHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IOC9kXHgEeSropXwu4fUHw" name="userInput">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_IOC9knHgEeSropXwu4fUHw" name="clientReturn" type="_IK1RgHHgEeSropXwu4fUHw"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_IOnlUHHgEeSropXwu4fUHw" name="Server" visibility="protected" method="_IPmcwHHgEeSropXwu4fUHw">
+              <eAnnotations xmi:id="_IOoMYHHgEeSropXwu4fUHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_IOoMYXHgEeSropXwu4fUHw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_IOnlUXHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IOozcHHgEeSropXwu4fUHw" type="_ILPhMHHgEeSropXwu4fUHw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_IOrPsHHgEeSropXwu4fUHw" name="getInput" visibility="private" isStatic="true" method="_IPnD0HHgEeSropXwu4fUHw" raisedException="_IM-mkHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IOr2wHHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IOsd0HHgEeSropXwu4fUHw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_IOykcHHgEeSropXwu4fUHw" name="output" visibility="private" isStatic="true" method="_IPoR8HHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IOykcXHgEeSropXwu4fUHw" name="client" type="_INVL4HHgEeSropXwu4fUHw"/>
+              <ownedParameter xmi:id="_IOzLgHHgEeSropXwu4fUHw" name="clientReturn" type="_IK1RgHHgEeSropXwu4fUHw"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ILmGgHHgEeSropXwu4fUHw" name="ServerBootstrap">
+            <ownedComment xmi:id="_IPxb4HHgEeSropXwu4fUHw">
+              <body>This class provides a caching thread pool which creates an instance of the&#xD;
+server class to process user input as it is received by the system. It opens&#xD;
+a socket and simply waits until it is required.&#xD;
+&#xD;
+@author Craig Morrison&#xD;
+@version 1.0&#xD;
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_WuhkcHHgEeSropXwu4fUHw" name="server" type="_ILPhMHHgEeSropXwu4fUHw" association="_WufIMHHgEeSropXwu4fUHw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WuyqMHHgEeSropXwu4fUHw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuyqMXHgEeSropXwu4fUHw" value="*"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IPo5AHHgEeSropXwu4fUHw" name="main" specification="_ILn7sHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_IPo5AXHgEeSropXwu4fUHw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IPo5AnHgEeSropXwu4fUHw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Scanner in = new Scanner(System.in);&#xD;
+&#xD;
+		try {&#xD;
+			// bind socket, inform of startup and create thread pool.&#xD;
+			ServerSocket sock = new ServerSocket(6100);&#xD;
+			System.out.println(&quot;Server is running!&quot;);&#xD;
+			ExecutorService executorService = Executors.newCachedThreadPool();&#xD;
+&#xD;
+			// loop infinitely&#xD;
+			while (true) {&#xD;
+&#xD;
+				Socket client = sock.accept();&#xD;
+				executorService.execute(new Server(client));&#xD;
+				// Code below here will not execute&#xD;
+			}&#xD;
+		} catch (IOException ioe) {&#xD;
+			System.err&#xD;
+					.println(&quot;An Input/Output Exception occurred. The Server will now close. Error: &quot;&#xD;
+							+ ioe);&#xD;
+			System.exit(1);&#xD;
+		}&#xD;
+		in.close();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_ILn7sHHgEeSropXwu4fUHw" name="main" isStatic="true" method="_IPo5AHHgEeSropXwu4fUHw">
+              <ownedParameter xmi:id="_ILn7sXHgEeSropXwu4fUHw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ILoiwHHgEeSropXwu4fUHw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_IP7z8HHgEeSropXwu4fUHw" name="" memberEnd="_IP7z8XHgEeSropXwu4fUHw _IPAm4HHgEeSropXwu4fUHw">
+            <ownedEnd xmi:id="_IP7z8XHgEeSropXwu4fUHw" name="" type="_ILPhMHHgEeSropXwu4fUHw" association="_IP7z8HHgEeSropXwu4fUHw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_WufIMHHgEeSropXwu4fUHw" name="" memberEnd="_WufvQHHgEeSropXwu4fUHw _WuhkcHHgEeSropXwu4fUHw">
+            <ownedEnd xmi:id="_WufvQHHgEeSropXwu4fUHw" name="serverBootstrap" type="_ILmGgHHgEeSropXwu4fUHw" association="_WufIMHHgEeSropXwu4fUHw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WugWUHHgEeSropXwu4fUHw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wug9YHHgEeSropXwu4fUHw" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_iiLYsHHgEeSropXwu4fUHw" name="" memberEnd="_iiL_wHHgEeSropXwu4fUHw _iiMm0HHgEeSropXwu4fUHw"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_LTpAEHHhEeSropXwu4fUHw" client="_IK7_MHHgEeSropXwu4fUHw" supplier="_IKDOYHHgEeSropXwu4fUHw"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_Lk_10HHhEeSropXwu4fUHw" client="_ILIMcHHgEeSropXwu4fUHw" supplier="_ILPhMHHgEeSropXwu4fUHw"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IInrAHHgEeSropXwu4fUHw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_IInrAXHgEeSropXwu4fUHw" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_IM-mkHHgEeSropXwu4fUHw" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_INEGIHHgEeSropXwu4fUHw" name="InputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_INHwgHHgEeSropXwu4fUHw" name="ObjectInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_INLa4HHgEeSropXwu4fUHw" name="PrintWriter"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_INcgoHHgEeSropXwu4fUHw" name="Serializable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IN2JQHHgEeSropXwu4fUHw" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IN5MkXHgEeSropXwu4fUHw" name="InputStreamReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IN8P4HHgEeSropXwu4fUHw" name="ObjectOutputStream"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IIo5IHHgEeSropXwu4fUHw" name="net">
+        <packagedElement xmi:type="uml:Class" xmi:id="_INOeMHHgEeSropXwu4fUHw" name="ConnectException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_INVL4HHgEeSropXwu4fUHw" name="Socket"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IONVoHHgEeSropXwu4fUHw" name="ServerSocket"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IIpgMHHgEeSropXwu4fUHw" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_IJa8QHHgEeSropXwu4fUHw" name="concurrent">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_IOQY8HHgEeSropXwu4fUHw" name="ExecutorService"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_IOS1MHHgEeSropXwu4fUHw" name="Executors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_INYPMHHgEeSropXwu4fUHw" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IOg3oHHgEeSropXwu4fUHw" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_IOhesHHgEeSropXwu4fUHw" name="Runnable"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Hnes0HHgEeSropXwu4fUHw">
+      <eAnnotations xmi:id="_Hny14HHgEeSropXwu4fUHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_HolgEHHgEeSropXwu4fUHw" base_Package="_HPV5oHHgEeSropXwu4fUHw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_INCQ8HHgEeSropXwu4fUHw" base_Element="_IM-mkHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INHJcHHgEeSropXwu4fUHw" base_Element="_INEGIHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INKz0HHgEeSropXwu4fUHw" base_Element="_INHwgHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INN3IHHgEeSropXwu4fUHw" base_Element="_INLa4HHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INUk0HHgEeSropXwu4fUHw" base_Element="_INOeMHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INXoIHHgEeSropXwu4fUHw" base_Element="_INVL4HHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INbSgHHgEeSropXwu4fUHw" base_Element="_INYPMHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_INfj8HHgEeSropXwu4fUHw" base_Element="_INcgoHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IN5MkHHgEeSropXwu4fUHw" base_Element="_IN2JQHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IN7o0HHgEeSropXwu4fUHw" base_Element="_IN5MkXHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IN_TMHHgEeSropXwu4fUHw" base_Element="_IN8P4HHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IOPx4HHgEeSropXwu4fUHw" base_Element="_IONVoHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IOSOIHHgEeSropXwu4fUHw" base_Element="_IOQY8HHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IOUqYHHgEeSropXwu4fUHw" base_Element="_IOS1MHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IOj68HHgEeSropXwu4fUHw" base_Element="_IOhesHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_IO7HUHHgEeSropXwu4fUHw" base_Element="_IO5SIHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_IO88gHHgEeSropXwu4fUHw" base_Property="_IO8VcHHgEeSropXwu4fUHw" siblings="_IPsjYHHgEeSropXwu4fUHw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_IO-KoHHgEeSropXwu4fUHw" base_Element="_IO8VcHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_IPB1AHHgEeSropXwu4fUHw" base_Element="_IPAm4HHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_IPtxgHHgEeSropXwu4fUHw" base_Property="_IPsjYHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_IPu_oHHgEeSropXwu4fUHw" base_Element="_IPsjYHHgEeSropXwu4fUHw"/>
+  <UMLLabProfile:Reference xmi:id="_IP9pIHHgEeSropXwu4fUHw" base_Element="_IP7z8HHgEeSropXwu4fUHw"/>
+</xmi:XMI>
