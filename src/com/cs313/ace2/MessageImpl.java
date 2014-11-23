@@ -54,8 +54,8 @@ public class MessageImpl implements Message, Serializable {
 		digitCount = 0;
 		// set the counts for characters and digits
 		if (userInput != null) {
+			userInput = userInput.replaceAll("\\s+", "");
 			for (int i = 0; i < userInput.length(); i++) {
-				userInput.replaceAll("\\s+", "");
 				charCount++;
 				if (Character.isDigit(userInput.charAt(i))) {
 					digitCount++;

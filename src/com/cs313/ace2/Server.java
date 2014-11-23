@@ -61,7 +61,6 @@ public class Server implements Runnable {
 		try {
 			// Create variable for user input and default it to null
 			String userInput = "";
-
 			// await string from client and read in from buffer
 			userInput = getInput(client);
 
