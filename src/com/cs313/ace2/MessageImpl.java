@@ -39,7 +39,7 @@ public class MessageImpl implements Message, Serializable {
 	 */
 	private static final long serialVersionUID = -8355523039598854001L;
 	protected String userInput = null;
-	protected int charCount = 0, digitCount = 0;
+	protected int charCount, digitCount;
 
 	public MessageImpl(String inputString) {
 		userInput = inputString;
@@ -50,12 +50,16 @@ public class MessageImpl implements Message, Serializable {
 	 * input provided
 	 */
 	public void setCounts() {
+		charCount = 0;
+		digitCount = 0;
 		// set the counts for characters and digits
-		for (int i = 0; i < userInput.length(); i++) {
-			userInput.replaceAll("\\s+", "");
-			charCount++;
-			if (Character.isDigit(userInput.charAt(i))) {
-				digitCount++;
+		if (userInput != null) {
+			for (int i = 0; i < userInput.length(); i++) {
+				userInput.replaceAll("\\s+", "");
+				charCount++;
+				if (Character.isDigit(userInput.charAt(i))) {
+					digitCount++;
+				}
 			}
 		}
 	}
